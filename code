@@ -1,0 +1,17 @@
+CREATE DATABASE data;
+
+CREATE TABLE IF NOT EXISTS `employeedata` (
+  `id` int(11) NOT NULL,
+  `fname` varchar(200) NOT NULL,
+  `lname` varchar(200) NOT NULL,
+  `age` int(11) NOT NULL);
+ 
+ALTER TABLE `employeedata` ADD PRIMARY KEY (`id`);
+
+INSERT INTO `employeedata` (`id`, `fname`, `lname`, `salary`, `age`) VALUES
+(1, 'Maal', 'Bhai', '25000', 21),
+(2, 'Ishan', 'Bhai', '28000', 22),
+(3, 'Poonam', 'Bhai', '35000', 20),
+(4, 'Piya', 'Bhai', '15000', 25),
+(5, 'Sadi', 'Bhai', '75000', 21),
+(6, 'Dalaal', 'Bhai', '65000', 20);
